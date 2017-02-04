@@ -97,15 +97,12 @@
 <ul class="media-list">
   <li class="media" ng-repeat="tool in tools">
     <div class="media-left">
-      <a href="#">
-        <img data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" class="media-object" src="..." alt="...">
-       </a>
-      
+     
     </div>
     <div class="media-body">
-      <h4 class="media-heading">{{ tool.gsx$teachername.$t}}</h4>
-      Class: {{ tool.gsx$grade.$t}}<br/>
-      Email: {{ tool.gsx$email.$t}}<br/>
+      <h4 class="media-heading">{{ tool.gsx$name.$t}}</h4>
+      Class / Section: {{ tool.gsx$classsctn.$t}}<br/>
+      Email: {{ tool.gsx$room.$t}}<br/>
     </div>
   </li>
 </ul>
