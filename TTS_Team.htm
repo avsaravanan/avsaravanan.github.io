@@ -92,7 +92,12 @@
       </div><div class="text-center"><h3 class="success alert alert-success">சேர்ந்து வளர்ப்போம் செந்தமிழ்ப் பயிரை !!!</h3></div>
 	  <div>
 	  <div class="container marketing">
-
+<div class="table-responsive">
+  <table class="table">
+	  <thead> <tr> <th>Class / Section</th><th>Room</th><th>Teacher Name</th></tr></thead>
+	  <tbody> <tr ng-repeat="tool in tools"> <td>{{ tool.gsx$classsctn.$t}}</td><td>{{ tool.gsx$room.$t}}</td><td>{{ tool.gsx$name.$t}}</td></tr></tbody>
+  </table>
+</div>
      
 <ul class="media-list">
   <li class="media" ng-repeat="tool in tools">
@@ -100,7 +105,7 @@
      
     </div>
     <div class="media-body">
-      <h4 class="media-heading">{{ tool.gsx$name.$t}}</h4>
+      <h5 class="media-heading">{{ tool.gsx$name.$t}}</h5>
       Class / Section: {{ tool.gsx$classsctn.$t}}<br/>
       Room: {{ tool.gsx$room.$t}}<br/>
     </div>
