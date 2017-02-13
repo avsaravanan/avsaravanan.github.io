@@ -101,10 +101,20 @@
     <p>Sort Reverse: {{ sortReverse }}</p>
     <p>Search Query: {{ searchFish }}</p>
   </div>
+		  <form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+
+        <input type="text" class="form-control" placeholder="Search da Fish" ng-model="searchFish">
+
+      </div>      
+    </div>
+  </form>
 <div class="table-responsive">
   <table class="table table-striped">
 	  <thead> <tr> <th class="col-md-2">Class / Section</th><th>Room</th><th>Teacher Name</th></tr></thead>
-	  <tbody> <tr ng-repeat="tool in tools"><th scope=row>{{tool.gsx$classsctn.$t}}</th><td>{{tool.gsx$room.$t}}</td><td>{{tool.gsx$name.$t}}</td></tr>
+	  <tbody> <tr ng-repeat="tool in tools | orderBy:sortType:sortReverse | filter:searchFish"><th scope=row>{{tool.gsx$classsctn.$t}}</th><td>{{tool.gsx$room.$t}}</td><td>{{tool.gsx$name.$t}}</td></tr>
 	  </tbody>
   </table>
 </div>
