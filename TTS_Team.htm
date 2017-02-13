@@ -28,9 +28,8 @@
 
     app.controller('teamCtrl', function($scope, $http) {
 	    
-  $scope.searchFish   = '';     // set the default search/filter term
+  	$scope.searchText   = '';     // set the default search/filter term
   
-      
       //https://docs.google.com/spreadsheets/d/1MiSaSjvb0D8WqVLEw5Fqa8g7GvZUuA3zUQQMVKRnB28/edit?usp=sharing
       $http.get("https://spreadsheets.google.com/feeds/list/1MiSaSjvb0D8WqVLEw5Fqa8g7GvZUuA3zUQQMVKRnB28/1/public/values?alt=json")
             .success(function(response) {$scope.tools = response.feed.entry;});
@@ -89,7 +88,7 @@
 	  <div class="container marketing">
 		  <div class="alert alert-info">
     
-    <p>Search Query: {{ searchFish }}</p>
+    <p>Search Query: {{ searchText }}</p>
   </div>
 		  <form>
     <div class="form-group">
