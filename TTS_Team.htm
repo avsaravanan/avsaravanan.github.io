@@ -92,7 +92,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2016 TTS· <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+	      <p>© <span id="#year"></span> TTS· <a href="#">Privacy</a> · <a href="#">Terms</a></p>
       </footer>
 
     </div>
@@ -112,16 +112,18 @@
     <![endif]-->
 
     <script type="text/javascript">
-    var app = angular.module('teamApp', []);
+	var curDate = new Date();
+	var curYear = curDate.getFullYear();
+    	document.getElementById("year").innerHTML = curYear.toString();
+	    
+    	var app = angular.module('teamApp', []);
 
-    app.controller('teamCtrl', function($scope, $http) {
+    	app.controller('teamCtrl', function($scope, $http) {
   
-  
-      //https://docs.google.com/spreadsheets/d/1MiSaSjvb0D8WqVLEw5Fqa8g7GvZUuA3zUQQMVKRnB28/edit?usp=sharing
+        //https://docs.google.com/spreadsheets/d/1MiSaSjvb0D8WqVLEw5Fqa8g7GvZUuA3zUQQMVKRnB28/edit?usp=sharing
       $http.get("https://spreadsheets.google.com/feeds/list/1y9l4xE5Atk6SS9Jbb4tXIuqqEHFAbfXXgAJ_MPEcsZw/1/public/values?alt=json")
             .success(function(response) {$scope.tools = response.feed.entry;});
     });
   </script>
-   
-
+  
 </body></html>
