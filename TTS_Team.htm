@@ -92,7 +92,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-	      <p>© <span id="#year"></span> TTS · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+	      <p>© <span id="year"></span> TTS · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
       </footer>
 
     </div>
@@ -114,6 +114,7 @@
     <script type="text/javascript">
 	var curDate = new Date();
 	var curYear = curDate.getFullYear();
+	//$( "#year" ).html( str );
     	document.getElementById("year").innerHTML = curYear.toString();
 	    
     	var app = angular.module('teamApp', []);
