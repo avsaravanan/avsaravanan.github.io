@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Process Improvement Initiative</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+
+:root{
+    --primary:#0078D4;
+    --primary-dark:#005A9E;
+    --navy:#243A5E;
+    --light:#EAF4FF;
+    --accent:#50A7F5;
+    --success:#00B7A8;
+}
+
+body{
+    background:#f5f9fd;
+    font-family:'Segoe UI',sans-serif;
+    color:#243A5E;
+}
+
+.hero{
+    background:linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary)
+    );
+    color:white;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-weight:700;
+}
+
+.section-title{
+    color:var(--primary-dark);
+    font-weight:700;
+}
+
+.card-custom{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.challenge-card{
+    background:white;
+}
+
+.solution-card{
+    background:white;
+}
+
+.icon-circle{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    color:white;
+}
+
+.icon-blue{
+    background:var(--primary);
+}
+
+.icon-teal{
+    background:var(--success);
+}
+
+.metric-card{
+    transition:.3s ease;
+}
+
+.metric-card:hover{
+    transform:translateY(-6px);
+}
+
+.big-arrow{
+    font-size:60px;
+    color:var(--primary);
+}
+
+.card-custom,
+.metric-card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.journey-step{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+}
+
+.quote-panel{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color:white;
+    border-radius:18px;
+}
+
+.before{
+    border-left:6px solid #dc3545;
+}
+
+.after{
+    border-left:6px solid #198754;
+}
+
+.benefit-icon{
+    font-size:3rem;
+}
+
+.footer-banner{
+    background:#243A5E;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .big-arrow{
+        transform:rotate(90deg);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+
+<section class="hero text-center">
+
+<div class="container">
+
+<h1>From Information Silos to a Single Source of Truth</h1>
+
+<h4 class="mt-3">
+A Process Improvement Initiative
+</h4>
+
+<p class="mt-3">
+Transforming operational knowledge into business value through visibility,
+governance, and collaboration.
+</p>
+
+</div>
+
+</section>
+
+<!-- Challenge -->
+
+<section class="container py-5">
+
+<h2 class="text-center section-title mb-5">
+The Challenge
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card card-custom text-center p-4">
+
+<i class="bi bi-file-earmark-spreadsheet display-4 text-primary"></i>
+
+<h5 class="mt-3">Spreadsheets</h5>
+
+<p>Multiple disconnected repositories.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom text-center p-4">
+
+<i class="bi bi-envelope-fill display-4 text-primary"></i>
+
+<h5 class="mt-3">Email Threads</h5>
+
+<p>Information buried in conversations.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom text-center p-4">
+
+<i class="bi bi-folder-fill display-4 text-primary"></i>
+
+<h5 class="mt-3">Shared Documents</h5>
+
+<p>Different versions and ownership.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom text-center p-4">
+
+<i class="bi bi-diagram-3-fill display-4 text-primary"></i>
+
+<h5 class="mt-3">Applications</h5>
+
+<p>Complex dependencies across teams.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Journey -->
+
+<section class="container py-5">
+
+<h2 class="text-center section-title mb-5">
+Process Improvement Journey
+</h2>
+
+<div class="row text-center g-4">
+
+<div class="col-md-3">
+
+<div class="journey-step">
+
+<i class="bi bi-search display-5 text-primary"></i>
+
+<h5 class="mt-3">Analyze</h5>
+
+<p>Identify recurring operational challenges.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="journey-step">
+
+<i class="bi bi-kanban-fill display-5 text-primary"></i>
+
+<h5 class="mt-3">Standardize</h5>
+
+<p>Create a common operational framework.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="journey-step">
+
+<i class="bi bi-database-fill display-5 text-primary"></i>
+
+<h5 class="mt-3">Centralize</h5>
+
+<p>Build a trusted knowledge repository.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="journey-step">
+
+<i class="bi bi-shield-check display-5 text-primary"></i>
+
+<h5 class="mt-3">Govern</h5>
+
+<p>Define ownership and accountability.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Before After -->
+
+<section class="container py-5">
+
+<div class="row align-items-center g-4">
+
+<div class="col-lg-5">
+
+<div class="card card-custom before p-4">
+
+<h3>Before</h3>
+
+<ul>
+<li>Information silos</li>
+<li>Manual searching</li>
+<li>Spreadsheet dependency</li>
+<li>Knowledge stored with individuals</li>
+<li>Limited transparency</li>
+<li>Operational risk</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 text-center">
+
+<i class="bi bi-arrow-right-circle-fill big-arrow"></i>
+
+<h5 class="mt-3 text-primary">
+Transformation
+</h5>
+
+</div>
+
+<div class="col-lg-5">
+
+<div class="card card-custom after p-4">
+
+<h3>After</h3>
+
+<ul>
+<li>Single Source of Truth</li>
+<li>Application Inventory</li>
+<li>Dependency Mapping</li>
+<li>Ownership Visibility</li>
+<li>Operational Knowledge Hub</li>
+<li>Controlled Governance</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Solution Hub -->
+
+<section class="container py-5">
+
+<h2 class="text-center section-title mb-5">
+The Solution
+</h2>
+
+<div class="card card-custom p-5 text-center">
+
+<div class="icon-circle icon-blue mb-4">
+
+<i class="bi bi-database-fill fs-1"></i>
+
+</div>
+
+<h2>Single Source of Truth</h2>
+
+<div class="row mt-5">
+
+<div class="col-md-4 mb-4">
+
+<i class="bi bi-grid-fill display-5 text-primary"></i>
+
+<h5 class="mt-3">Application Inventory</h5>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<i class="bi bi-arrow-left-right display-5 text-primary"></i>
+
+<h5 class="mt-3">Dependency Mapping</h5>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<i class="bi bi-person-badge-fill display-5 text-primary"></i>
+
+<h5 class="mt-3">Ownership & Support</h5>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<i class="bi bi-book-fill display-5 text-primary"></i>
+
+<h5 class="mt-3">Operational Knowledge</h5>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<i class="bi bi-clock-history display-5 text-primary"></i>
+
+<h5 class="mt-3">Governance & Change Tracking</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Results -->
+
+<section class="container py-5">
+
+<h2 class="text-center section-title mb-5">
+Business Impact
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card metric-card card-custom text-center p-4">
+
+<i class="bi bi-eye-fill text-primary benefit-icon"></i>
+
+<h5 class="mt-3">Enhanced Visibility</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card metric-card card-custom text-center p-4">
+
+<i class="bi bi-lightning-charge-fill text-primary benefit-icon"></i>
+
+<h5 class="mt-3">Faster Resolution</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card metric-card card-custom text-center p-4">
+
+<i class="bi bi-people-fill text-primary benefit-icon"></i>
+
+<h5 class="mt-3">Better Collaboration</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card metric-card card-custom text-center p-4">
+
+<i class="bi bi-book-half text-primary benefit-icon"></i>
+
+<h5 class="mt-3">Shared Knowledge</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card metric-card card-custom text-center p-4">
+
+<i class="bi bi-shield-check text-primary benefit-icon"></i>
+
+<h5 class="mt-3">Reduced Risk</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card metric-card card-custom text-center p-4">
+
+<i class="bi bi-graph-up-arrow text-primary benefit-icon"></i>
+
+<h5 class="mt-3">Operational Efficiency</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Quote -->
+
+<section class="container py-5">
+
+<div class="quote-panel p-5 text-center">
+
+<h3>
+<i class="bi bi-quote"></i>
+</h3>
+
+<h4>
+The most successful process improvements don't always introduce new technology.
+They make information accessible, actionable, and trusted.
+</h4>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="footer-banner py-4">
+
+<div class="container text-center">
+
+<h5>
+People • Process • Technology • Better Outcomes
+</h5>
+
+<p class="mb-0">
+Continuous Improvement Creates Lasting Impact
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
